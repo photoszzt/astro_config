@@ -74,7 +74,7 @@ return {
         ensure_installed = { "clangd", "rust-analyzer", "pyright" }, -- automatically install lsp
       },
     },
-  }
+  },
 
   -- Configure require("lazy").setup() options
   lazy = {
