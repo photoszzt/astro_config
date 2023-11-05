@@ -17,6 +17,12 @@ return {
     },
   },
 
+  options = {
+    g = {
+      icons_enabled = false,
+    },
+  },
+
   -- Set colorscheme to use
   colorscheme = "astrodark",
 
@@ -52,7 +58,23 @@ return {
     servers = {
       -- "pyright"
     },
+    config = {
+      clangd = {
+        capabilities = {
+          offsetEncoding = "utf-8",
+        },
+      },
+    },
   },
+
+  plugins = {
+    {
+      "williamboman/mason-lspconfig.nvim",
+      opts = {
+        ensure_installed = { "clangd", "rust-analyzer", "pyright" }, -- automatically install lsp
+      },
+    },
+  }
 
   -- Configure require("lazy").setup() options
   lazy = {
