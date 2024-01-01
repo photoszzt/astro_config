@@ -64,6 +64,13 @@ return {
           offsetEncoding = "utf-8",
         },
       },
+      gopls = {
+        analyses = {
+          fieldalignment = true,
+        },
+        staticcheck = true,
+        gofumpt = true,
+      },
     },
   },
 

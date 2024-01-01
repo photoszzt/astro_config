@@ -10,7 +10,7 @@ return {
         -- "lua_ls",
         "clangd",
         "gopls",
-        "rust-analyzer",
+        "rust_analyzer",
       })
     end,
   },
