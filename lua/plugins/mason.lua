@@ -12,6 +12,9 @@ return {
       ensure_installed = {
         "lua_ls",
         -- add more arguments for adding more language servers
+        "clangd",
+        "gopls",
+        "rust_analyzer",
       },
     },
   },
@@ -21,8 +24,13 @@ return {
     -- overrides `require("mason-null-ls").setup(...)`
     opts = {
       ensure_installed = {
+        "prettier",
         "stylua",
         -- add more arguments for adding more null-ls sources
+        "clang-format",
+        "goimports",
+        "golangci-lint",
+        "gofumpt",
       },
     },
   },
