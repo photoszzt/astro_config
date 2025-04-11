@@ -15,7 +15,7 @@ return {
         "lua-language-server",
         "clangd",
         "gopls",
-        "rust_analyzer",
+        "rust-analyzer",
 
         -- install formatters
         "stylua",
